@@ -21,16 +21,28 @@ class HexColorConverterTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func test_WhenProvidedWithHexStringThatIsTooShort_shouldReturnNil() {
+
+        let shortTestString = "12345"
+        let resultA = UIColor.colorFromHexString(hex: shortTestString)
+        XCTAssertNil(resultA, "expecting nil, got something else")
+
+        let shortTestStringWithHash = "#12345"
+        let resultB = UIColor.colorFromHexString(hex: shortTestStringWithHash)
+        XCTAssertNil(resultB, "expecting nil, got something else")
+
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func test_WhenProvidedWithHexStringThatIsTooLong_shouldReturnNil() {
+
+        let longTestString = "1234567"
+        let resultA = UIColor.colorFromHexString(hex: longTestString)
+        XCTAssertNil(resultA, "expecting nil, got something else")
+        
+        let longTestStringWithHash = "#1234567"
+        let resultB = UIColor.colorFromHexString(hex: longTestStringWithHash)
+        XCTAssertNil(resultB, "expecting nil, got something else")
+
     }
     
 }

@@ -13,6 +13,7 @@
 		57DF54472024AB6300AEF073 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57DF54462024AB6300AEF073 /* Assets.xcassets */; };
 		57DF544A2024AB6300AEF073 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57DF54482024AB6300AEF073 /* LaunchScreen.storyboard */; };
 		57DF54552024AB6300AEF073 /* HexColorConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DF54542024AB6300AEF073 /* HexColorConverterTests.swift */; };
+		57DF54602024AB7D00AEF073 /* UIColor+HexColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DF545F2024AB7D00AEF073 /* UIColor+HexColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		57DF54502024AB6300AEF073 /* HexColorConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HexColorConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57DF54542024AB6300AEF073 /* HexColorConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColorConverterTests.swift; sourceTree = "<group>"; };
 		57DF54562024AB6300AEF073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57DF545F2024AB7D00AEF073 /* UIColor+HexColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexColors.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				57DF54462024AB6300AEF073 /* Assets.xcassets */,
 				57DF54482024AB6300AEF073 /* LaunchScreen.storyboard */,
 				57DF544B2024AB6300AEF073 /* Info.plist */,
+				57DF545F2024AB7D00AEF073 /* UIColor+HexColors.swift */,
 			);
 			path = HexColorConverter;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57DF54602024AB7D00AEF073 /* UIColor+HexColors.swift in Sources */,
 				57DF54422024AB6300AEF073 /* ViewController.swift in Sources */,
 				57DF54402024AB6300AEF073 /* AppDelegate.swift in Sources */,
 			);
